@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import { MemoryRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { PRIVATE_ROUTES, PUBLIC_ROUTES } from 'renderer/routes/routes'
 import { ROUTE_PATH } from 'renderer/types/route'
@@ -13,10 +12,10 @@ const RequireAuth = ({ children }: { children: JSX.Element }) => {
   }
 
   return (
-    <Fragment>
+    <>
       <AppBar />
       {children}
-    </Fragment>
+    </>
   )
 }
 
